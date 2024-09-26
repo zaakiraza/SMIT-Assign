@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 4%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.fl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.innputs {
+    width: 100%;
+}
+
+.innputs input:first-child {
+    width: 28%;
+}
+
+.innputs input:last-child {
+    width: 60%;
+    margin-left: 15px;
+}
+
+.innputs input {
+    padding: 14px 20px;
+}
+
+section.frm {
+    display: flex;
+    align-items: center;
+}
+
+.frm a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.banner {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.banner ul {
+    display: flex;
+    gap: 20px;
+}
+
+.banner img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.banner img:last-child {
+    width: auto;
+}
+
+.items {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.box{
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 15px;
+}
+
+.box img {
+    width: 100px;
+}
+
+marquee {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 25px;
+}

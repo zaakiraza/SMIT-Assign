@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue; 
+            text-decoration: underline; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Question#1 -->
+    <div class="contact">
+        <h1>SignUp</h1>
+        <form action="">
+            <input id="input1" type="text" placeholder="Name" required>
+            <input id="input2" type="email" placeholder="E-Mail" required>
+            <input id="input3" type="password" placeholder="Password" required>
+            <input id="formSubmit" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!-- Question#2 -->
+    <h3 id="para"></h3>
+    <p id="btn1" onclick="showMore()">show More</p>
+    <p id="btn2" style="display: none;" onclick="showLess()">show Less</p>
+
+    
+    <!-- Question#3 -->
+    <form action="">
+        <input id="input1" type="text" placeholder="Name" required>
+        <input id="input2" type="email" placeholder="E-Mail" required>
+        <input id="input3" type="password" placeholder="Password" required>
+        <button onclick="fun()">Submit</button>
+    </form>
+
+    <p id="dataShow"></p>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

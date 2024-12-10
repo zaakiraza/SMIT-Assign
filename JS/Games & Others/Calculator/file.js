@@ -47,7 +47,6 @@ const fun = () => {
     a.value = a.value + '0';
 }
 
-
 let one = document.getElementById('one');
 const fun1 = () => {
     a.value = a.value + '1';

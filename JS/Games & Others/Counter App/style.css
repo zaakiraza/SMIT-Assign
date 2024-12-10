@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+h1#count {
+    font-size: 100px;
+}
+
+button {
+    padding: 5px 16px;
+    margin: 0 4px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}

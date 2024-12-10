@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 25%;
+    top: 40%;
+    left: 25%;
+    background-color: black;
+    width: 50%;
+    flex-direction: column;
+    padding: 15px 0;
+    border-radius: 17px;
+    opacity: 0;
+    animation: ani 2s forwards;
+}
+
+@keyframes ani {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.modal h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top: 23px;
+}
+
+button {
+    padding: 10px 33px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}

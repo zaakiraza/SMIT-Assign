@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
-        p{
-            color: blue; 
-            text-decoration: underline; 
+        p {
+            color: blue;
+            text-decoration: underline;
             cursor: pointer;
         }
     </style>
@@ -34,16 +34,25 @@
     <p id="btn1" onclick="showMore()">show More</p>
     <p id="btn2" style="display: none;" onclick="showLess()">show Less</p>
 
-    
-    <!-- Question#3 -->
-    <form action="">
-        <input id="input1" type="text" placeholder="Name" required>
-        <input id="input2" type="email" placeholder="E-Mail" required>
-        <input id="input3" type="password" placeholder="Password" required>
-        <button onclick="fun()">Submit</button>
-    </form>
 
+    <!-- Question#3 -->
+    <form>
+        <input id="input1" type="text" placeholder="Name">
+        <input id="input2" type="email" placeholder="E-Mail">
+        <input id="input3" type="password" placeholder="Password">
+        <button type="button" onclick="fun()">Submit</button>
+    </form>
+    <table id="table1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th></th>
+        </tr>
+    </table>
     <p id="dataShow"></p>
+
+
     <script src="app.js"></script>
 
 </body>

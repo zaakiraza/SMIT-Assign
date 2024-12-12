@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.sec {
+    padding: 43px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navItems li {
+    list-style-type: none;
+}
+
+.navItems li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navItems li a:hover {
+    color: red;
+}
+
+.main2,
+.main3 {
+    display: none;
+}
+
+#tag1{
+    color: red;
+}

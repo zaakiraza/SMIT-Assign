@@ -13,7 +13,7 @@
         <div class="portion2">
             <div class="resetGame">
                 <i class="fa-solid fa-arrows-rotate"></i>
-                <p>NEW GAME</p>
+                <p onclick="newGame()">NEW GAME</p>
             </div>
             <img id="rollingDiceImage" src="Images/1.png" alt="">
             <div class="rollDice">
@@ -22,24 +22,24 @@
             </div>
             <div class="holdNumber">
                 <i class="fa-solid fa-hand"></i>
-                <p>HOLD</p>
+                <p onclick="turnChanger()">HOLD</p>
             </div>
         </div>
         <div class="container">
             <div class="portion portion1">
                 <h1 id="fstPlayer"></h1>
-                <h2>0</h2>
+                <h2 id="comingScore1">0</h2>
                 <div class="box">
                     <h3>Current</h3>
-                    <h3>0</h3>
+                    <h3 id="totalScore1">0</h3>
                 </div>
             </div>
             <div class="portion portion3">
                 <h1 id="secPlayer"></h1>
-                <h2>0</h2>
+                <h2 id="comingScore2">0</h2>
                 <div class="box">
                     <h3>Current</h3>
-                    <h3>0</h3>
+                    <h3 id="totalScore2">0</h3>
                 </div>
             </div>
         </div>

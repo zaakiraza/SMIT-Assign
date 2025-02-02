@@ -22,6 +22,7 @@ let holdDice = 1;
 let scorePlayer1 = 0;
 let scorePlayer2 = 0;
 let currentScore = 0;
+
 const rollDice = (a) => {
     diceNumber = Math.ceil(Math.random() * 6);
     let diceImage = document.getElementById('rollingDiceImage');

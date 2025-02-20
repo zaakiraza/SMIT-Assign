@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,26 +15,81 @@
         <div class="buttons">
             <button class="btn operator" id="clear" onclick="clearscreen()">AC</button>
             <button class="btn operator" id="del" onclick="cross()">x</button>
-            <button class="btn operator" id="mod" onclick="funmod()">%</button>
-            <button class="btn operator" id="divide" onclick="fundvide()">/</button>
+            <button class="btn operator" id="mod" onclick="funAll('%')">%</button>
+            <button class="btn operator" id="divide" onclick="funAll('/')">/</button>
+            
+            <button class="btn number" id="seven" onclick="funAll('7')">7</button>
+            <button class="btn number" id="eight" onclick="funAll('8')">8</button>
+            <button class="btn number" id="nine" onclick="funAll('9')">9</button>
+            <button class="btn operator" id="multi" onclick="funAll('*')">*</button>
+            
+            <button class="btn number" id="four" onclick="funAll('4')">4</button>
+            <button class="btn number" id="five" onclick="funAll('5')">5</button>
+            <button class="btn number" id="six" onclick="funAll('6')">6</button>
+            <button class="btn operator" id="minus" onclick="funAll('-')">-</button>
+            
+            <button class="btn number" id="one" onclick="funAll('1')">1</button>
+            <button class="btn number" id="two" onclick="funAll('2')">2</button>
+            <button class="btn number" id="three" onclick="funAll('3')">3</button>
+            <button class="btn operator" id="plus" onclick="funAll('+')">+</button>
+            
+            <button class="btn number" id="zero" onclick="funAll('0')">0</button>
+            <button class="btn operator" id="dot" onclick="funAll('.')">.</button>
+            <button class="btn operator equals" id="equal" onclick="funequal()">=</button>
+        </div>
+    </div>
 
-            <button class="btn number" id="seven" onclick="fun7()">7</button>
-            <button class="btn number" id="eight" onclick="fun7()">8</button>
-            <button class="btn number" id="nine" onclick="fun9()">9</button>
-            <button class="btn operator" id="multi" onclick="funmulti()">*</button>
+    <script src="file.js"></script>
 
-            <button class="btn number" id="four" onclick="fun4()">4</button>
-            <button class="btn number" id="five" onclick="fun5()">5</button>
-            <button class="btn number" id="six" onclick="fun6()">6</button>
-            <button class="btn operator" id="minus" onclick="funminus()">-</button>
+</body>
 
-            <button class="btn number" id="one" onclick="fun1()">1</button>
-            <button class="btn number" id="two" onclick="fun2()">2</button>
-            <button class="btn number" id="three" onclick="fun3()">3</button>
-            <button class="btn operator" id="plus" onclick="funplus()">+</button>
+</html> -->
 
-            <button class="btn number" id="zero" onclick="fun()">0</button>
-            <button class="btn operator" id="dot" onclick="fundot()">.</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Calculator</title>
+</head>
+
+<body>
+
+    <div class="calc">
+        <input id="logic" type="text">
+
+        <div class="buttons">
+            <button class="btn operator" id="clear" onclick="clearscreen()">AC</button>
+            <button class="btn operator" id="del" onclick="cross()">x</button>
+            <button class="btn operator" id="mod" onclick="funAll('%')">%</button>
+            <button class="btn operator" id="multi" onclick="funAll('*')">*</button>
+
+            <button class="btn number" onclick="funAll('Math.sin()')">sin</button>
+            <button class="btn number" onclick="funAll('Math.cos()')">cos</button>
+            <button class="btn number" onclick="funAll('Math.tan()')">tan</button>
+            <button class="btn operator" id="minus" onclick="funAll('-')">-</button>
+            
+            <button class="btn number" onclick="funAll('Math.pow()')">x²</button>
+            <button class="btn number" onclick="funAll('Math.sqrt()')">√</button>
+
+            <button class="btn number" id="nine" onclick="funAll('9')">9</button>
+            <button class="btn operator" id="dot" onclick="funAll('.')">.</button>
+
+            <button class="btn number" id="eight" onclick="funAll('8')">8</button>
+            <button class="btn number" id="seven" onclick="funAll('7')">7</button>
+            <button class="btn number" id="six" onclick="funAll('6')">6</button>
+            <button class="btn operator" id="plus" onclick="funAll('+')">+</button>
+
+            <button class="btn number" id="five" onclick="funAll('5')">5</button>
+            <button class="btn number" id="four" onclick="funAll('4')">4</button>
+            <button class="btn number" id="three" onclick="funAll('3')">3</button>
+            <button class="btn operator" id="dot" onclick="funAll('.')">.</button>
+            
+            <button class="btn number" id="two" onclick="funAll('2')">2</button>
+            <button class="btn number" id="one" onclick="funAll('1')">1</button>
+            <button class="btn number" id="zero" onclick="funAll('0')">0</button>
             <button class="btn operator equals" id="equal" onclick="funequal()">=</button>
         </div>
     </div>

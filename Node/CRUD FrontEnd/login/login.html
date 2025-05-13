@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/c681fd371f.js" crossorigin="anonymous"></script>
+    <title>LogIn Page</title>
+</head>
+
+<body>
+
+    <div id="loader">
+        <i class="fa-solid fa-circle-notch"></i>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" id="loginEmail" placeholder="Email">
+            </div>
+            <p id="errorEmail"></p>
+
+            <div class="input-group">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <i class="fa-solid fa-eye-slash" id="showPassword"></i>
+                <i class="fa-solid fa-eye" id="hidePassword"></i>
+            </div>
+            <p id="errorPassword"></p>
+
+            <button type="submit" id="loginBtn">Login</button>
+        </form>
+        <div class="routing">
+            <a href="../index.html">Don't have account signUp</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+
+</body>
+
+</html>

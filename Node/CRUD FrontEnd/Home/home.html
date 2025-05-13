@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/c681fd371f.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <i class="fa-solid fa-circle-notch"></i>
+    </div>
+
+    <!-- SIDE PANEL -->
+    <div class="side-panel" id="side-panel">
+        <h1 id="closeMenuBtn">X</h1>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+            alt="Profile" id="profilePic" class="profile-pic">
+        <div class="user-details">
+            <h2 id="userName">User Name</h2>
+            <p id="userEmail">User E-Mail</p>
+            <p id="userDescription">User Description</p>
+        </div>
+        <div class="stats">
+            <div>
+                Posts:
+                <span id="blogsCount">0</span>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="LogoutBtn">LogOut</button>
+            <button id="editProfileBtn">Edit Profile</button>
+        </div>
+    </div>
+
+    <!-- INPUT OPEN MODEL -->
+    <div class="post-container">
+        <div class="top_Menu">
+            <img id="menuBtn" alt="Profile Pic">
+            <div class="post-update" id="open_Modal">
+                What's on your mind?
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+        <div id="allPosts">
+            <!-- <div class="content_posts">
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg" alt="Image">
+                    </div>
+                    <div class="profile_content">
+                        <h1>Zakir</h1>
+                        <h4>zaakiraza110@gmail.com</h4>
+                        <h4>2min</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="post_content">
+                    <p class="shortText">asmdkascajsncjncndsnjcns</p>
+                    <p class="fullText" style="display: none;"> saxsacsncnsadcjdsc<a href="javascript:void(0)" class="toggleTextLink">Read less</a></p>
+                    <img src="https://res.cloudinary.com/dvo8ftbqu/image/upload/v1744893123/Blogs/d5dvcyk3ps9valoydzon.jpg" alt="">
+                </div>
+                <div class="social-post-card">
+                    <div class="reaction-counts">
+                        <div>👍 120 Likes</div>
+                        <div>💬 45 Comments</div>
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="action-btn like">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+
+                        <div class="action-btn comment">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+
+                        <div class="action-btn">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_posts">
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                            alt="Image">
+                    </div>
+                    <div class="profile_content">
+                        <h1>Zakir</h1>
+                        <h4>zaakiraza110@gmail.com</h4>
+                        <h4>2min</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="post_content">
+                    <p class="shortText">asmdkascajsncjncndsnjcns</p>
+                    <p class="fullText" style="display: none;"> saxsacsncnsadcjdsc<a href="javascript:void(0)"
+                            class="toggleTextLink">Read less</a></p>
+                    <img src="https://res.cloudinary.com/dvo8ftbqu/image/upload/v1744893123/Blogs/d5dvcyk3ps9valoydzon.jpg"
+                        alt="">
+                </div>
+                <div class="social-post-card">
+                    <div class="reaction-counts">
+                        <div>👍 120 Likes</div>
+                        <div>💬 45 Comments</div>
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="action-btn like">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+
+                        <div class="action-btn comment">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+
+                        <div class="action-btn">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- POST MODAL -->
+    <div class="posting" id="postModel">
+        <div class="postModel">
+            <div id="crossBtn">x</div>
+            <textarea id="postContent" rows="15" cols="80" placeholder="What's on your mind?"></textarea>
+            <div class="fileInputPost">
+                <label for="media_file">+</label>
+                <input type="file" id="media_file" accept=".jpg, .png, .gif, .jpeg, .pdf, .mp4" hidden>
+                <p id="ImgName"></p>
+            </div>
+            <div class="post_opt">
+                <button class="preview_post_btn" id="prevewBtn">Previw Post</button>
+                <button id="postBtn">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- POST PREVIEW MODAL -->
+    <div class="posting" id="preview_Post">
+        <div class="preview_Post">
+            <div class="preview_content-post">
+                <div class="post_content" id="post_content">
+                    <p id="previewText"></p>
+                </div>
+                <button id="backPreview">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDIT PROFILE MODAL -->
+    <div class="posting" id="edit_profile_whole">
+        <div id="editProfile">
+            <div class="input-group">
+                <input type="text" id="editName" placeholder="Name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="editImg" class="upload-icon">
+                    <i class="fa-solid fa-upload"></i> Upload Image
+                </label>
+                <input id="editImg" type="file" required hidden>
+            </div>
+
+            <div class="ImgView">
+                <img id="previwProfilePic">
+            </div>
+
+            <div class="input-group">
+                <textarea id="editDes" rows="6" cols="44" placeholder="Description"></textarea>
+            </div>
+
+            <button type="submit" id="submitEditBtn">Save Changes</button>
+            <button type="submit" id="cancelEditBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
